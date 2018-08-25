@@ -13,3 +13,7 @@ Electron Packaged [Castbox](https://castbox.fm)
 - 刷新Ctrl+R
 - 前进Ctrl+F
 - 后退Ctrl+B
+
+
+### TODO
+- 设置PAC代理
