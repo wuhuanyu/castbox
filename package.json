@@ -8,16 +8,15 @@
     "pack": "build --dir",
     "dist": "build"
   },
-
-  "build":{
-    "appId":"com.stack.castbox",
-    "mac":{
-      "category":"public.app-category.entertainment",
-      "target":"dmg",
-      "icon":"images/icon.icns"
+  "build": {
+    "appId": "com.stack.castbox",
+    "mac": {
+      "category": "public.app-category.entertainment",
+      "target": "dmg",
+      "icon": "images/icon.icns"
     },
-    "linux":{
-      "target":"AppImage"
+    "linux": {
+      "target": "AppImage"
     }
   },
   "repository": "https://github.com/electron/electron-quick-start",
@@ -32,7 +31,10 @@
     "electron-builder": "^20.28.2"
   },
   "dependencies": {
+    "electron-config": "^1.0.0",
     "electron-localshortcut": "^3.1.0",
-    "lodash": "^4.17.10"
+    "electron-prompt": "^1.1.0-1",
+    "lodash": "^4.17.10",
+    "sqlite3": "^4.0.2"
   }
 }
