@@ -77,7 +77,7 @@ app.on('ready', function(){
             prompt({
               title:"请输入代理端口(生效后将重启Castbox）",
               label:"端口号(0-65535)",
-              value:config.get("socks5_port")
+              value:1080
             }).then(port=>{
               if(!isNaN(port)){
                 config.set("socks5_port",port)
@@ -85,8 +85,10 @@ app.on('ready', function(){
                   window.close()
                 })
                 createWindow()
+              }else{
+                
               }
-            })
+            }).catch(console.error)
           }
         }
       ]
